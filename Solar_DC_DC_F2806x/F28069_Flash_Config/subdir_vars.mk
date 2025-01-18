@@ -10,22 +10,22 @@ CMD_SRCS += \
 ../F2806x_Headers_nonBIOS.cmd 
 
 LIB_SRCS += \
-C:/ti/HV_SOLAR_DC_DC/libs/math/IQmath/v160/lib/IQmath.lib 
+C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/libs/math/IQmath/v160/lib/IQmath.lib 
 
 ASM_SRCS += \
-C:/ti/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_CodeStartBranch.asm \
-C:/ti/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_usDelay.asm \
+C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_CodeStartBranch.asm \
+C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_usDelay.asm \
 ../HV_Solar_DC_DC-DPL-ISR.asm 
 
 C_SRCS += \
-C:/ti/HV_SOLAR_DC_DC/libs/app_libs/digital_power/f2803x_v3.3/C/ADC_SOC_Cnf.c \
+C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/libs/app_libs/digital_power/f2803x_v3.3/C/ADC_SOC_Cnf.c \
 ../F2806x_ECan.c \
-C:/ti/HV_SOLAR_DC_DC/device_support/f2806x/v151/F2806x_headers/source/F2806x_GlobalVariableDefs.c \
+C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/device_support/f2806x/v151/F2806x_headers/source/F2806x_GlobalVariableDefs.c \
 ../HV_Solar_DC_DC-Main.c \
 ../HV_Solar_DC_DC_DevInit_F2803x.c \
 ../PWM_1ch_UpDwnCnt_Cnf.c \
 ../PWM_ComplPairDB_Cnf.c \
-C:/ti/HV_SOLAR_DC_DC/development_kits/~SupportFiles/source/SciCommsGui.c \
+C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/development_kits/~SupportFiles/source/SciCommsGui.c \
 ../SolarHv_DCDC-Lin.c 
 
 C_DEPS += \
@@ -89,18 +89,18 @@ ASM_DEPS__QUOTED += \
 "HV_Solar_DC_DC-DPL-ISR.d" 
 
 C_SRCS__QUOTED += \
-"C:/ti/HV_SOLAR_DC_DC/libs/app_libs/digital_power/f2803x_v3.3/C/ADC_SOC_Cnf.c" \
+"C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/libs/app_libs/digital_power/f2803x_v3.3/C/ADC_SOC_Cnf.c" \
 "../F2806x_ECan.c" \
-"C:/ti/HV_SOLAR_DC_DC/device_support/f2806x/v151/F2806x_headers/source/F2806x_GlobalVariableDefs.c" \
+"C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/device_support/f2806x/v151/F2806x_headers/source/F2806x_GlobalVariableDefs.c" \
 "../HV_Solar_DC_DC_DevInit_F2803x.c" \
 "../PWM_1ch_UpDwnCnt_Cnf.c" \
 "../PWM_ComplPairDB_Cnf.c" \
-"C:/ti/HV_SOLAR_DC_DC/development_kits/~SupportFiles/source/SciCommsGui.c" \
+"C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/development_kits/~SupportFiles/source/SciCommsGui.c" \
 "../SolarHv_DCDC-Lin.c" 
 
 ASM_SRCS__QUOTED += \
-"C:/ti/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_CodeStartBranch.asm" \
-"C:/ti/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_usDelay.asm" \
+"C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_CodeStartBranch.asm" \
+"C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/device_support/f2803x/v125/DSP2803x_common/source/DSP2803x_usDelay.asm" \
 "../HV_Solar_DC_DC-DPL-ISR.asm" 
 
 

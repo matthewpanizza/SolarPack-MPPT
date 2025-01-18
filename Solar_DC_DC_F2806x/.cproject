@@ -58,16 +58,16 @@
                                 <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.VCU_SUPPORT.1527415293" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
                                 <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.INCLUDE_PATH.1671791238" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.INCLUDE_PATH" valueType="includePath">
                                     <listOptionValue value="${PROJECT_LOC}"/>
-                                    <listOptionValue value="..\..\libs\math\IQmath\v160\include"/>
-                                    <listOptionValue value="..\..\libs\app_libs\solar\v1.1\IQ"/>
-                                    <listOptionValue value="..\..\libs\app_libs\digital_power\f2803x_v3.3\include"/>
-                                    <listOptionValue value="..\..\libs\app_libs\digital_power\f2803x_v3.3\asm"/>
-                                    <listOptionValue value="..\..\device_support\f2806x\v151\F2806x_common\include"/>
-                                    <listOptionValue value="..\..\device_support\f2806x\v151\F2806x_headers\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\math\IQmath\v160\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\app_libs\solar\v1.1\IQ"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\app_libs\digital_power\f2803x_v3.3\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\app_libs\digital_power\f2803x_v3.3\asm"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2806x\v151\F2806x_common\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2806x\v151\F2806x_headers\include"/>
                                     <listOptionValue value="${CG_TOOL_ROOT}\include"/>
-                                    <listOptionValue value="..\..\device_support\f2803x\v125\DSP2803x_common\include"/>
-                                    <listOptionValue value="..\..\device_support\f2803x\v125\DSP2803x_headers\include"/>
-                                    <listOptionValue value="..\..\development_kits\~SupportFiles\source"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2803x\v125\DSP2803x_common\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2803x\v125\DSP2803x_headers\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\development_kits\~SupportFiles\source"/>
                                 </option>
                                 <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ADVICE__PERFORMANCE.421797475" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ADVICE__PERFORMANCE" value="--advice:performance=all" valueType="string"/>
                                 <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEFINE.2142091075" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEFINE" valueType="definedSymbols">

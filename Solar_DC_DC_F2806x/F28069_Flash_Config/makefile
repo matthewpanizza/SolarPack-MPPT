@@ -24,7 +24,7 @@ ORDERED_OBJS += \
 "./SolarHv_DCDC-Lin.obj" \
 "../F28069.cmd" \
 "../F2806x_Headers_nonBIOS.cmd" \
-"C:/ti/HV_SOLAR_DC_DC/libs/math/IQmath/v160/lib/IQmath.lib" \
+"C:/ti/SolarPack-MPPT/HV_SOLAR_DC_DC/libs/math/IQmath/v160/lib/IQmath.lib" \
 $(GEN_CMDS__FLAG) \
 
 -include ../makefile.init
