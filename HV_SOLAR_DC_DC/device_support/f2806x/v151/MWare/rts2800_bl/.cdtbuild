@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="rts2800_bl.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.910685411" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+<configuration artifactExtension="lib" artifactName="rts2800_bl" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1770388524" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.ReleaseToolchain.806547336" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease.1040001376">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.183934297" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28069"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.4"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY="/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=staticLibrary"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1682050497" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.1.0" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease.942411337" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING.1024068610" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL.1819766874" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY.1333827664" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.1985750493" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT.836190998" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.FLOAT_SUPPORT._none" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.848638543" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.VCU_SUPPORT.831013666" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.library.release.1530376815" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.library.release" value="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.OPT_LEVEL.0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH.1073866859" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V151}/MWare&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V151}/MWare/boot_loader&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V151}/F2806x_headers/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V151}/F2806x_common/include&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease.1040001376" name="C2000 Archiver" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.1.library.librarianRelease"/>
+<macros/>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>

@@ -1,0 +1,11 @@
+# This is an auto-generated file - do not add it to source-control
+
+CompileFlags:
+   CompilationDatabase: F28069_Flash_Config/.clangd
+
+Diagnostics:
+   Suppress: '*'
+
+InlayHints:
+   Enabled: No
+

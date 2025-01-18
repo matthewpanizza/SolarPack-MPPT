@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    <storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
+        <cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1658334470.1184323189">
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1658334470.1184323189" moduleId="org.eclipse.cdt.core.settings" name="F28069_Flash_Config">
+                <macros>
+                    <stringMacro name="copy_PROJECT_LOC" type="VALUE_PATH_ANY" value="${CONTROLSUITE_INSTALL_ROOT1}/Solar_DCDC_MPPT_BETA_28069/Solar_DCDC_MPPT_v1.0/Solar_DC_DC_F2806x"/>
+                    <stringMacro name="CONTROLSUITE_IQMATH_ROOT1" type="VALUE_PATH_ANY" value="${TI_PRODUCTS_DIR}/HV_SOLAR_DC_DC/libs/math/IQmath/v160"/>
+                    <stringMacro name="CONTROLSUITE_F2803x_POWERLIB_ROOT1" type="VALUE_PATH_ANY" value="${TI_PRODUCTS_DIR}/HV_SOLAR_DC_DC/libs/app_libs/digital_power/f2803x_v3.3"/>
+                    <stringMacro name="INSTALLROOT_F2806x_V151" type="VALUE_PATH_ANY" value="${CONTROLSUITE_INSTALL_ROOT1}/device_support/f2806x/v151"/>
+                    <stringMacro name="CONTROLSUITE_IQ_SOLARLIB_ROOT" type="VALUE_PATH_ANY" value="${PROJECT_LOC}/../../../libs/app_libs/solar/v1.0/IQ"/>
+                    <stringMacro name="CONTROLSUITE_F2803x_DEVICE_SUPPORT_ROOT" type="VALUE_PATH_ANY" value="${PROJECT_LOC}/../../../device_support/f2803x/v125"/>
+                    <stringMacro name="CONTROLSUITE_IQMATH_ROOT" type="VALUE_PATH_ANY" value="${PROJECT_LOC}/../../../libs/math/IQmath/v160"/>
+                    <stringMacro name="CONTROLSUITE_INSTALL_ROOT1" type="VALUE_PATH_ANY" value="${TI_PRODUCTS_DIR}/HV_SOLAR_DC_DC"/>
+                    <stringMacro name="CONTROLSUITE_F2803x_POWERLIB_ROOT" type="VALUE_PATH_ANY" value="${PROJECT_LOC}/../../../libs/app_libs/digital_power/f2803x_v3.3"/>
+                    <stringMacro name="CONTROLSUITE_F2803x_DEVICE_SUPPORT_ROOT1" type="VALUE_PATH_ANY" value="${TI_PRODUCTS_DIR}/HV_SOLAR_DC_DC/device_support/f2803x/v125"/>
+                    <stringMacro name="CONTROLSUITE_INSTALL_ROOT" type="VALUE_PATH_ANY" value="${PROJECT_LOC}/../../.."/>
+                </macros>
+                <externalSettings/>
+                <extensions>
+                    <extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="com.ti.ccs.errorparser.CompilerErrorParser_TI" point="com.ti.ccs.project.ErrorParser"/>
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    <extension id="com.ti.ccstudio.errorparser.CoffErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    <extension id="com.ti.ccstudio.errorparser.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    <extension id="com.ti.ccstudio.errorparser.LinkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                </extensions>
+            </storageModule>
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                <configuration artifactExtension="out" artifactName="HV_Solar_DC_DC" buildProperties="" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1658334470.1184323189" name="F28069_Flash_Config" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+                    <folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1658334470.1184323189." name="/" resourcePath="">
+                        <toolChain id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.DebugToolchain.1234971099" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.linkerDebug.1019785980">
+                            <option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1633981264" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+                                <listOptionValue value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28069"/>
+                                <listOptionValue value="DEVICE_CORE_ID=C28xx_0"/>
+                                <listOptionValue value="DEVICE_ENDIANNESS=little"/>
+                                <listOptionValue value="OUTPUT_FORMAT=COFF"/>
+                                <listOptionValue value="LINKER_COMMAND_FILE=F28069.cmd"/>
+                                <listOptionValue value="RUNTIME_SUPPORT_LIBRARY="/>
+                                <listOptionValue value="IS_ASSEMBLY_ONLY=false"/>
+                                <listOptionValue value="PROJECT_KIND=com.ti.ccstudio.managedbuild.core.ProjectKind_Executable"/>
+                                <listOptionValue value="IS_ELF=false"/>
+                                <listOptionValue value="PRODUCT_MACRO_IMPORTS={}"/>
+                                <listOptionValue value="OUTPUT_TYPE=executable"/>
+                                <listOptionValue value="CCS_MBS_VERSION=70.0.0"/>
+                                <listOptionValue value="PRODUCTS="/>
+                            </option>
+                            <option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.201305659" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.2.5.LTS" valueType="string"/>
+                            <targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.targetPlatformDebug.1064795405" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.targetPlatformDebug"/>
+                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.builderDebug.1698137847" keepEnvironmentInBuildfile="false" name="GNU Make" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.builderDebug"/>
+                            <tool id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.compilerDebug.218265591" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.compilerDebug">
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.LARGE_MEMORY_MODEL.1436114177" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.UNIFIED_MEMORY.2137942784" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.SILICON_VERSION.1356649283" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.FLOAT_SUPPORT.1639730714" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.FLOAT_SUPPORT.softlib" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.CLA_SUPPORT.330199754" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.VCU_SUPPORT.1527415293" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.INCLUDE_PATH.1671791238" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.INCLUDE_PATH" valueType="includePath">
+                                    <listOptionValue value="${PROJECT_LOC}"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\math\IQmath\v160\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\app_libs\solar\v1.1\IQ"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\app_libs\digital_power\f2803x_v3.3\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\libs\app_libs\digital_power\f2803x_v3.3\asm"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2806x\v151\F2806x_common\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2806x\v151\F2806x_headers\include"/>
+                                    <listOptionValue value="${CG_TOOL_ROOT}\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2803x\v125\DSP2803x_common\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\device_support\f2803x\v125\DSP2803x_headers\include"/>
+                                    <listOptionValue value="..\..\HV_Solar_DC_DC\development_kits\~SupportFiles\source"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ADVICE__PERFORMANCE.421797475" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ADVICE__PERFORMANCE" value="--advice:performance=all" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEFINE.2142091075" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEFINE" valueType="definedSymbols">
+                                    <listOptionValue value="_DEBUG"/>
+                                    <listOptionValue value="FLASH"/>
+                                    <listOptionValue value="LARGE_MODEL"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEBUGGING_MODEL.1063774292" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DIAG_WARNING.2033554204" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DIAG_WARNING" valueType="stringList">
+                                    <listOptionValue value="225"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ABI.761102459" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.ABI.coffabi" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.OTHER_FLAGS.1570377284" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.OTHER_FLAGS" valueType="stringList">
+                                    <listOptionValue value=""/>
+                                </option>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__C_SRCS.1971632451" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__C_SRCS"/>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__CPP_SRCS.111779900" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__CPP_SRCS"/>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM_SRCS.2068584371" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM_SRCS"/>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM2_SRCS.821654205" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM2_SRCS"/>
+                            </tool>
+                            <tool id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.linkerDebug.1019785980" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.linkerDebug">
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.STACK_SIZE.1833574001" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.STACK_SIZE" value="0x380" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.MAP_FILE.971366714" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.MAP_FILE" value="&quot;HV_Solar_DC_DC.map&quot;" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.OUTPUT_FILE.1601589420" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.OUTPUT_FILE" value="HV_Solar_DC_DC.out" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.generatedLinkerCommandFiles.232788303" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.generatedLinkerCommandFiles" valueType="stringList">
+                                    <listOptionValue value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.SEARCH_PATH.1224846390" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.SEARCH_PATH" valueType="libPaths">
+                                    <listOptionValue value="${CG_TOOL_ROOT}/lib"/>
+                                    <listOptionValue value="${CG_TOOL_ROOT}/include"/>
+                                </option>
+                                <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.XML_LINK_INFO.1603699106" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.linkerID.XML_LINK_INFO" value="HV_Solar_DC_DC_linkInfo.xml" valueType="string"/>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exeLinker.inputType__CMD_SRCS.729936373" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exeLinker.inputType__CMD_SRCS"/>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exeLinker.inputType__CMD2_SRCS.1844325784" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exeLinker.inputType__CMD2_SRCS"/>
+                                <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exeLinker.inputType__GEN_CMDS.998625170" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exeLinker.inputType__GEN_CMDS"/>
+                            </tool>
+                            <tool id="com.ti.ccstudio.buildDefinitions.C2000_20.2.hex.507368097" name="C2000 Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.hex"/>
+                        </toolChain>
+                    </folderInfo>
+                    <fileInfo id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1658334470.1184323189.HV_Solar_DC_DC-Main.c" name="HV_Solar_DC_DC-Main.c" rcbsApplicability="disable" resourcePath="HV_Solar_DC_DC-Main.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.compilerDebug.218265591.2071514094">
+                        <tool id="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.compilerDebug.218265591.2071514094" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.exe.compilerDebug.218265591">
+                            <option id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEFINE.2013974237" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compilerID.DEFINE" valueType="definedSymbols">
+                                <listOptionValue value="FLASH"/>
+                                <listOptionValue value="_DEBUG"/>
+                                <listOptionValue value="LARGE_MODEL"/>
+                            </option>
+                            <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__C_SRCS.1957952257" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__C_SRCS"/>
+                            <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__CPP_SRCS.93446461" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__CPP_SRCS"/>
+                            <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM_SRCS.1578442902" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM_SRCS"/>
+                            <inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM2_SRCS.196002950" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.2.compiler.inputType__ASM2_SRCS"/>
+                        </tool>
+                        <tool customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.236788032.929983795" name="Resource Custom Build Step">
+                            <inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.875110356.568983441" name="Resource Custom Build Step Input Type">
+                                <additionalInput kind="additionalinputdependency" paths=""/>
+                            </inputType>
+                            <outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.641173027.1076454227" name="Resource Custom Build Step Output Type"/>
+                        </tool>
+                    </fileInfo>
+                    <sourceEntries>
+                        <entry excluding="28069_RAM_lnk.cmd" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                    </sourceEntries>
+                </configuration>
+            </storageModule>
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+        </cconfiguration>
+    </storageModule>
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <project id="PowerLibTestBench.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.1231166514" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType"/>
+    </storageModule>
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    <storageModule moduleId="scannerConfiguration"/>
+    <storageModule moduleId="null.devicePreference"/>
+    <storageModule moduleId="cpuFamily"/>
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

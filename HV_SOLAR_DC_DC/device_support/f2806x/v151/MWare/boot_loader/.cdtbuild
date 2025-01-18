@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="boot_loader.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.1337053707" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType">
+<configuration artifactExtension="out" artifactName="boot_loader" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug" postannouncebuildStep="" postbuildStep="">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.DebugToolchain.1537456007" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.81995033" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28069"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.2"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=28069_RAM_lnk.cmd"/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+<listOptionValue builtIn="false" value="LINK_ORDER=2806x_BootROM_API_TABLE_Symbols.lib;F28069.cmd;F2806x_Headers_nonBIOS.cmd;"/>
+<listOptionValue builtIn="false" value="DEPENDENCIES="/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.2122848843" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.0.1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING.1157431508" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL.779925692" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY.14367155" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.933651443" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.763019473" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT._none" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CLA_SUPPORT.2012344969" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.1629460536" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.238575015" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V115}/MWare&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_CONTROLSUITE}/libs/dsp/VCU/v110/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V115}/MWare/boot_loader&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V115}/F2806x_common/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2806x_V115}/F2806x_headers/include&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE.1411998316" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="ccs"/>
+<listOptionValue builtIn="false" value="VCU"/>
+<listOptionValue builtIn="false" value="USB_ENABLE_UPDATE"/>
+<listOptionValue builtIn="false" value="CRC32"/>
+<listOptionValue builtIn="false" value="CHECK_CRC"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_LEVEL.1112559262" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_LEVEL" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_LEVEL.0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_FOR_SPACE.166393057" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_FOR_SPACE" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CPP_DEFAULT.1175277533" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CPP_DEFAULT" value="false" valueType="boolean"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE.2069775054" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE" value="0x400" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE.2066017313" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE" value="&quot;boot_loader.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE.1692796227" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE" value="&quot;boot_loader.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY.808591571" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH.1916078403" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_CONTROLSUITE}\libs\dsp\VCU\v110\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;..\rts2800_bl\Release&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.ENTRY_POINT.1457003548" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.ENTRY_POINT" value="_code_start_n" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.PRIORITY.1478795075" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.PRIORITY" value="true" valueType="boolean"/>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/rts2800_bl/_lock.c" name="_lock.c" rcbsApplicability="disable" resourcePath="/boot_loader/rts2800_bl/_lock.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/_lock.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/_lock.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/rts2800_bl/args_main.c" name="args_main.c" rcbsApplicability="disable" resourcePath="/boot_loader/rts2800_bl/args_main.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/args_main.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/args_main.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/rts2800_bl/boot28_f.asm" name="boot28_f.asm" rcbsApplicability="disable" resourcePath="/boot_loader/rts2800_bl/boot28_f.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/boot28_f.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/boot28_f.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/rts2800_bl/boot28.asm" name="boot28.asm" rcbsApplicability="disable" resourcePath="/boot_loader/rts2800_bl/boot28.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/boot28.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/boot28.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/rts2800_bl/exit.c" name="exit.c" rcbsApplicability="disable" resourcePath="/boot_loader/rts2800_bl/exit.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/exit.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/rts2800_bl/exit.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/F28069.cmd" name="F28069.cmd" rcbsApplicability="disable" resourcePath="/boot_loader/F28069_bl.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/F28069.cmd">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/F28069.cmd" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/bl_app.c" name="bl_app.c" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/bl_app.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/bl_app.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/bl_app.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/bl_entrytable.asm" name="bl_entrytable.asm" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/bl_entrytable.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/bl_entrytable.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/bl_entrytable.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/F28069_bl_app.cmd" name="F28069_bl_app.cmd" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/F28069_bl_app.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/F28069_bl_app.cmd">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/F28069_bl_app.cmd" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/ccsObjs.opt" name="ccsObjs.opt" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/ccsObjs.opt" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/Debug/ccsObjs.opt">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/Debug/ccsObjs.opt" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/ccsSrcs.opt" name="ccsSrcs.opt" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/ccsSrcs.opt" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/Debug/ccsSrcs.opt">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/bl_app/Debug/ccsSrcs.opt" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/bl_app.obj" name="bl_app.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/bl_app.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/bl_app.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/bl_app.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_CodeStartBranch.obj" name="F2806x_CodeStartBranch.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_CodeStartBranch.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_CodeStartBranch.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_CodeStartBranch.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_CSMPasswords.obj" name="F2806x_CSMPasswords.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_CSMPasswords.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_CSMPasswords.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_CSMPasswords.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_DefaultIsr.obj" name="F2806x_DefaultIsr.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_DefaultIsr.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_DefaultIsr.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_DefaultIsr.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_GlobalVariableDefs.obj" name="F2806x_GlobalVariableDefs.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_GlobalVariableDefs.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_GlobalVariableDefs.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_GlobalVariableDefs.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_PieCtrl.obj" name="F2806x_PieCtrl.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_PieCtrl.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_PieCtrl.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_PieCtrl.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_PieVect.obj" name="F2806x_PieVect.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_PieVect.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_PieVect.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_PieVect.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_SysCtrl.obj" name="F2806x_SysCtrl.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_SysCtrl.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_SysCtrl.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_SysCtrl.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/F2806x_usDelay.obj" name="F2806x_usDelay.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/F2806x_usDelay.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_usDelay.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/F2806x_usDelay.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/bl_app/Debug/bl_entrytable.obj" name="bl_entrytable.obj" rcbsApplicability="disable" resourcePath="/boot_loader/bl_app/Debug/bl_entrytable.obj" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/bl_entrytable.obj">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273./boot_loader/bl_app/Debug/bl_entrytable.obj" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerDebug.1027151273"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="false" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/F2806x_CodeStartBranch.asm" name="F2806x_CodeStartBranch.asm" rcbsApplicability="disable" resourcePath="/boot_loader/F2806x_CodeStartBranch.asm" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/F2806x_CodeStartBranch.asm">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/F2806x_CodeStartBranch.asm" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+<resourceConfiguration exclude="true" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.825568986./boot_loader/aes.c" name="aes.c" rcbsApplicability="disable" resourcePath="/boot_loader/aes.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/aes.c">
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264./boot_loader/aes.c" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerDebug.281158264"/>
+</resourceConfiguration>
+</configuration>
+<configuration artifactExtension="out" artifactName="boot_loader" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1203338400" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.ReleaseToolchain.2131652052" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerRelease.1019156148">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1274245973" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28069"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.2"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=28069_RAM_lnk.cmd"/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1282848880" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="6.0.1" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerRelease.560327770" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING.1333971005" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL.2021992728" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.LARGE_MEMORY_MODEL" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY.549491531" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.UNIFIED_MEMORY" value="true" valueType="boolean"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.1794079531" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.670805754" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CLA_SUPPORT.2124915777" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CLA_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.CLA_SUPPORT.cla0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.52312952" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.VCU_SUPPORT.vcu0" valueType="enumerated"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1389405806" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerRelease.1019156148" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE.1328494258" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.STACK_SIZE" value="0x300" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE.1945138176" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.OUTPUT_FILE" value="&quot;boot_loader.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE.921717237" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.MAP_FILE" value="&quot;boot_loader.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY.702382952" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH.575618586" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+</option>
+</tool>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>
