@@ -1,0 +1,20 @@
+/*
+//###########################################################################
+//
+// This .gel file can be used to help demonstrate the example project.
+//
+//###########################################################################
+// $TI Release: F2806x C/C++ Header Files and Peripheral Examples V151 $
+// $Release Date: February  2, 2016 $
+// $Copyright: Copyright (C) 2011-2016 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
+//###########################################################################
+*/
+
+menuitem "F2806x HRPWM FineDutySlider"
+slider FineDutySlider(1, 254, 1, 1, finedutyvalue)
+{
+
+ DutyFine = finedutyvalue;
+}
+
