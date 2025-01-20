@@ -9,10 +9,10 @@
 //
 //  Version:        1.0
 //
-//  Target:         TMS320F2803x(PiccoloB),
+//  Target:         TMS320F28069(PiccoloB),
 //
 //----------------------------------------------------------------------------------
-//  Copyright Texas Instruments © 2004-2010
+//  Copyright Texas Instruments ï¿½ 2004-2010
 //----------------------------------------------------------------------------------
 //  Revision History:
 //----------------------------------------------------------------------------------
@@ -59,8 +59,6 @@
 #include "mppt_incc.h"
 #include "mppt_pno.h"
 
-#include "SolarHv_DCDC-Lin.h"
-
 #include <math.h>
 #include <stdlib.h>
 
@@ -72,8 +70,6 @@
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // Add protoypes of functions being used in the project here 
 void DeviceInit(void);
-void SCIA_Init();
-void SerialHostComms();
 void InitFlash();
 void MemCopy();
 //-------------------------------- DPLIB --------------------------------------------
@@ -157,9 +153,6 @@ void RGBModeControl(Uint16 DisplayMode);
 int16 VTimer0[4];   // Virtual Timers slaved off CPU Timer 0
 int16 VTimer1[4];   // Virtual Timers slaved off CPU Timer 1
 int16 VTimer2[4];   // Virtual Timers slaved off CPU Timer 2
-
-int16   SerialCommsTimer;
-int16   CommsOKflg;
 
 // Used for running BackGround in flash, and ISR in RAM
 extern Uint16 *RamfuncsLoadStart, *RamfuncsLoadEnd, *RamfuncsRunStart;
@@ -300,37 +293,15 @@ int16   Gui_PanelPower_Prev;
 
 //GUI support variables
 // sets a limit on the amount of external GUI controls - increase as necessary
-int16 *varSetTxtList[16];   //16 textbox controlled variables
-int16 *varSetBtnList[16];   //16 button controlled variables
-int16 *varSetSldrList[16];  //16 slider controlled variables
-int16 *varGetList[16];      //16 variables sendable to GUI
-int16 *arrayGetList[16];    //16 arrays sendable to GUI
 int16 LedBlinkCnt;
 
 // ---------------------------------- USER -----------------------------------------
 
 // Monitor ("Get")  // Display as:
-//Uint16 Gui_IL;    // Q11
-int16 Gui_Vb_fb;    // Q06. Variable used for displaying Vb on DC-DC GUI
-int16 Inv_Gui_Vb_fb;//Variable used for communicating and displaying Vb on Inverter GUI
-
+int16 Gui_Vb_fb;        // Q06. Variable used for displaying Vb on DC-DC GUI
 int16 Gui_PanelPower; 
-int16 Inv_Gui_PanelPower; 
-
-//int16 Gui_Ipv;
-//int16 Gui_Vpv;
-
-int16 Gui_IL_avg;//Variable used for displaying average IL (panel current) on DC-DC GUI
-int16 Inv_Gui_IL_avg;//Variable used for communicating and displaying average IL (panel current) on Inverter GUI
-
-int16 Gui_Vp_fb;//Variable used for displaying Vp (panel volt) on DC-DC GUI
-int16 Inv_Gui_Vp_fb;//Variable used for communicating and displaying Vp (panel volt) on Inverter GUI
-
-// Configure ("Set")
-//int16     Gui_Vp_fb_set;
-int16   Gui_Operation_mode;
-int16   Gui_inverter_connected;
-int16   Gui_inverter_mode;
+int16 Gui_IL_avg;       //Variable used for displaying average IL (panel current) on DC-DC GUI
+int16 Gui_Vp_fb;        //Variable used for displaying Vp (panel volt) on DC-DC GUI
 
 // History arrays are used for Running Average calculation (boxcar filter)
 // HistorySize is defined in Solar_DC_DC_Settings.h file
@@ -358,11 +329,6 @@ Uint16 Kinv_Vp_fb;  //
 int16 i;                        // common use incrementer
 Uint32 HistPtr, temp_Scratch;   // Temp here means Temporary
 
-
-//
-int LinDebugLED=0;
-long LinDebugTimer = 0;
-Uint32 LinL0IntCount;
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // MAIN CODE - starts here
@@ -399,11 +365,6 @@ void main(void)
     InitFlash();    // Call the flash wrapper init function
 //#endif //(FLASH)
 
-//#ifdef FLASH
-    SCIA_Init();    // Initalize the Serial Comms A peripheral - Uncomment for FLASH config
-//#endif //(FLASH)
-
-
     DeviceInit();   // Device Life support & GPIO
 // Timing sync for background loops
 // Timer period definitions found in PeripheralHeaderIncludes.h
@@ -422,23 +383,6 @@ void main(void)
     VTimer2[0] = 0;
     LedBlinkCnt = 5;
 
-#ifdef  FLASH
-    CommsOKflg = 0;
-    SerialCommsTimer = 0;
-#endif
-
-    Gui_wPanelVolt = &Inv_Gui_Vp_fb;
-    Gui_wPanelCurrent = &Inv_Gui_IL_avg;
-    Gui_wBoostOutputVolt = &Inv_Gui_Vb_fb;
-    Gui_wPanelOutputPower = &Inv_Gui_PanelPower;
-    Gui_wMPPT_Status = &Operation_mode;
-
-
-    //"Set" variables
-    //---------------------------------------
-    // assign GUI variable Textboxes to desired "setable" parameter addresses
-
-
 // ---------------------------------- USER -----------------------------------------
 //  put common initialization/variable definitions here
 
@@ -453,31 +397,6 @@ void main(void)
     dbred=25;//Initialize dead band for LLC PWM
     dbfed=25;
     db_dly_cntr=0;
-
-//===============================================================================
-//  INITIALISATION - GUI connections
-//=================================================================================
-// Use this section only if you plan to "Instrument" your application using the 
-// Microsoft C# freeware GUI Template provided by TI
-
-    //"Set" variables
-    //---------------------------------------
-    // assign GUI variable Textboxes to desired "setable" parameter addresses
-//  varSetTxtList[0] = &Gui_Vp_fb_set;
-    varSetTxtList[0] = &Operation_mode;
-    varSetTxtList[1] = &inverter_connected;
-
-
-    //"Get" variables
-    //---------------------------------------
-    // assign a GUI "getable" parameter address
-    varGetList[0] = &Gui_Vb_fb;
-    varGetList[1] = &Gui_Vp_fb;
-    varGetList[2] = &Gui_IL_avg;
-    varGetList[3] = &Gui_PanelPower;
-    varGetList[4] = &Operation_mode;
-    varGetList[5] = &inverter_mode;
-
 
 //==================================================================================
 //  INCREMENTAL BUILD OPTIONS - NOTE: selected via {Solar_DC_DC-Settings.h
@@ -735,36 +654,6 @@ void main(void)
         EPwm2Regs.TZCTL.bit.TZB = TZ_FORCE_LO; // EPWM2B will go low
 
         EDIS;
-
-//=================================================================================
-//  LIN INITIALIZATION
-//=================================================================================
-    LinL0IntVect  = 0;
-
-    //InitLinaGpio();
-    EALLOW;
-    GpioCtrlRegs.GPAPUD.bit.GPIO22 = 0;     // Enable pull-up for GPIO9 (LIN TX)
-    GpioCtrlRegs.GPAPUD.bit.GPIO23 = 0;     // Enable pull-up for GPIO11 (LIN RX)
-    GpioCtrlRegs.GPAQSEL2.bit.GPIO23 = 3;  // Asynch input GPIO11 (LINRXA)
-
-/* Configure LIN-A pins using GPIO regs*/
-    GpioCtrlRegs.GPAMUX2.bit.GPIO22 = 3;    // Configure GPIO9 for LIN TX operation (2-Enable,0-Disable)
-    GpioCtrlRegs.GPAMUX2.bit.GPIO23 = 3;   // Configure GPIO11 for LIN RX operation  (2-Enable,0-Disable)
-    EDIS;
-
-    //Initialize and Enable BLIN SCI module
-    SetupLin();
-
-    sdataALin = 0;
-    rdataALin = 0;
-
-    RcvTaskPointerLin = &GetCmdByteLin;         // Initialize the CmdPacket Rcv Handler state machine ptr
-
-    // clear Command Packet
-    for (iLin=0; iLin<PktSizeLin; iLin++)
-    {
-        CmdPacketLin[iLin] = 0x0;
-    }
 
 //=================================================================================
 //  CAN INITIALIZATION
@@ -1026,7 +915,6 @@ interrupt void SECONDARY_ISR(void)
     //Changed Gui Power from Q6 (above) to Q5 (below) to allow power calculation greater than 512Watt.
     //Use Q5 to display Gui_PanelPower on CCS watch window
     Gui_PanelPower= _IQ5mpy(((int16)Gui_Vp_fb>>1),((int16)Gui_IL_avg>>6));//Q5(16bit)*Q5(16bit) ==>IQMathLib==> Q5 (16bit)
-    Inv_Gui_PanelPower = Gui_PanelPower>>5;
 
 
 // Following is the implementation using the solar lib function
@@ -1089,7 +977,7 @@ interrupt void SECONDARY_ISR(void)
     if(inverter_connected == 1)//Inverter is connected. This is the default setting. The user must use the GUI
                                 //to set this variable to 0 if the inverter is not connected//
     {
-        if(GpioDataRegs.GPADAT.bit.GPIO16 == 1)//Check to see if the Inverter has pulled this pin HIGH
+        /*if(GpioDataRegs.GPADAT.bit.GPIO16 == 1)//Check to see if the Inverter has pulled this pin HIGH
         {
             if(GPIO_cnt==5)//Inverter has pulled the GPIO pin HIGH indicating a fault. So wait for 5 count before disabling MPPT
             {
@@ -1117,7 +1005,7 @@ interrupt void SECONDARY_ISR(void)
 
             GPIO_status=0;//Allow MPPT control by Enable_mppt when GPIO16 is pulled LOW
             GPIO_cnt = 0;
-        }
+        }*/
     }
 
 //---------------------------------------------------------------------------------------------------
@@ -1176,12 +1064,12 @@ interrupt void SECONDARY_ISR(void)
             //************Code added to implement LLC output OV protection ONLY when the inverter is connected.
             //This parameter Gui_wLLCOutputVolt is available from the Inverter side when the Inverter is connected and
             //communicating to DC-DC. Therefore, LLC output will not have OV protection when the DC-DC runs without the Inverter
-            if(Gui_wLLCOutputVolt > 4100)
+            /*if(Gui_wLLCOutputVolt > 4100)
             {
                 EALLOW;
                 EPwm3Regs.TZFRC.bit.OST = 1;//Turn off LLC PWM when LLC output is 410V
                 EDIS;
-            }
+            }*/
 
 //------------------------------------------------------------------------------------------------------
 
@@ -1270,8 +1158,6 @@ void A0(void)
         (*A_Task_Ptr)();        // jump to an A Task (A1,A2,A3,...)
         //-----------------------------------------------------------
 
-        SerialCommsTimer++;
-
         VTimer0[0]++;           // virtual timer 0, instance 0 (spare)
     }
 
@@ -1359,30 +1245,6 @@ void A1(void)
 void A2(void) 
 //-----------------------------------------------------------------
 {
-    SerialHostComms();  // Uncomment for FLASH config
-
-    LinDebugTimer++;
-/*
-    //check Lin error
-    if(LinaRegs.SCIFLR.bit.BE == 1 ||LinaRegs.SCIFLR.bit.PE == 1 || LinaRegs.SCIFLR.bit.BRKDT == 1|| LinaRegs.SCIFLR.bit.OE == 1)
-    {
-        if(LinDebugTimer == 100)
-        {
-            LinDebugTimer = 0;
-            if(LinDebugLED <= 0)
-            {
-                GpioDataRegs.GPADAT.bit.GPIO31 = 0;//mModeLed_ON();
-                LinDebugLED = 1;
-            }
-            else if(LinDebugLED >= 1)
-            {
-                GpioDataRegs.GPADAT.bit.GPIO31 = 1;//mModeLed_OFF();
-                LinDebugLED = 0;
-            }
-        }
-    }
-*/
-
 //****************************************************
 //Add soft-start for LLC, only for Build 3. Move on to A3 when soft-start is over. Otherwise go back to A1
 

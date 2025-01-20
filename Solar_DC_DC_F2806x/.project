@@ -50,11 +50,6 @@
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/HV_SOLAR_DC_DC/libs/math/IQmath/v160/lib/IQmath.lib</locationURI>
 		</link>
-		<link>
-			<name>SciCommsGui.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/HV_SOLAR_DC_DC/development_kits/~SupportFiles/source/SciCommsGui.c</locationURI>
-		</link>
 	</linkedResources>
 	<variableList>
 		<variable>
