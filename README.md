@@ -1,5 +1,5 @@
 # SolarPack-MPPT
-Repository for a Solar Maximum Power Point Tracker boost converter using a TI F28069M-LAUNCHXL. Initially written on 1/18/2025.
+Repository for a Solar Maximum Power Point Tracker boost converter using a TI F28069M-LAUNCHXL. This project uses a modified version of the firmware for the [Texas Instruments MPPT Evaluation Board](https://www.ti.com/tool/TIDM-SOLAR-DCDC). Initially written on 1/18/2025.
 
 ## Background
 This hardware is designed to take variable input voltage from a solar array and boost it up to a higher voltage for charging a battery. It implements a Maximum Power Point Tracking algorithm that attempts to source the greatest amount of power from the solar array. See the following sections for information about the MPPT:
@@ -26,7 +26,7 @@ This PCB's brains is the TI [F28035 Piccolo controlCard](https://www.ti.com/tool
 
 After the first year at the competition, we found some issues with running the eval board continuously. The gate driver circuit had fried on us during one of the scrutineering days and we had to scramble to get some new parts to get it repaired. Since the design worked as a proof-of-concept, we figured we'd use the same architecture, but just amp up the size of the key components. Below is a picture of the Revision 1 Hardware:
 
-<img src="Pictures/MPPT_V1.jpg" width="75%">
+<img src="Pictures/MPPT_V1.JPG" width="75%">
 
 On this revision, we bumped up the specs of the switching MOSFETs and the input and output capacitors. On the eval board, we had to wire up dedicated isolation relays so the battery management system could cut off the power if there was an issue with the HV battery. On this revision, we included these relays, two on each of the input and output. The relays were then controlled from the BMS through the black/white Anderson connector on the left side of the board. Critically, we also needed to upgrate the brains - the F28035 control card uses this special RAM-like slot (like you'd find on a PC) for connecting to the board. We couldn't find these *anywhere*. Instead, we decided to port the code over to run on a newer platform, the LAUNCHXL-F28069M launchpad. This new microcontroller was based on the same C2000 series, which made the port fairly straightforward - it was a matter of pointing to the new F28069 header files.
 

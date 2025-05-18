@@ -513,6 +513,8 @@ void main(void)
 
 
     /////////////////////////////////////////////////////////////////////////////
+    // tested 0.8
+    //This seems to affect maximum boost voltage capability, higher = more voltage boost
     Dmax_I  = _IQ24(0.75); //Min Vin=200V, Max Vout=400V, Therefore Boost PWM max duty = 0.5
     /////////////////////////////////////////////////////////////////////////////
 
@@ -537,7 +539,9 @@ void main(void)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    Dmax_V  = _IQ24(0.765);//Max output from Vloop controller sets the Max boost current. At 200Vin, 550W input, Iboost=2.625A
+// tested 0.765
+//This seems to affect maximum boost current, higher = more current
+    Dmax_V  = _IQ24(0.75);//Max output from Vloop controller sets the Max boost current. At 200Vin, 550W input, Iboost=2.625A
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //Max boost current is 9.1A (set by the CS amplifier gain of 39.2 and CS sense resistor 0.01 ohm). Therefore,
@@ -612,7 +616,7 @@ void main(void)
         Comp3Regs.COMPCTL.bit.SYNCSEL    =0x0;  // asynchronous version of the COMP signal is passed to the EPWM/GPIO module
         Comp3Regs.COMPCTL.bit.CMPINV     =0x0;  // Output of the comparator is passed directly
         Comp3Regs.COMPCTL.bit.COMPSOURCE =0x0;  // inverting input of the comparator is connected to the internal DAC
-        Comp3Regs.DACVAL.bit.DACVAL      =808; //Set DAC input to peak Vout (Boost stage) OVP Threshold
+        Comp3Regs.DACVAL.bit.DACVAL      =(VBUS_RATED_VOLTS / 511.0) * 1023;  //Set DAC input to peak Vout (Boost stage) OVP Threshold
                                                 //400; //1023*(200V/511V)=400<=>200V @Boost Vout,
                                                 // 652; //1023*(326V/511V)=652<=>326V @Boost Vout
                                                 // 701; //1023*(350V/511V)=701<=>350V @Boost Vout
